@@ -1200,3 +1200,16 @@ body .main-conatiner .product-desc-container .prod-details-contaier .warrenty-se
   border-radius: 5px;
   border: 1px solid #000000;
 }
+@media only screen and (max-width: 600px) {
+  body .main-conatiner .product-desc-container {
+    display: grid;
+    grid-template-columns: 0fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  body .main-conatiner .product-desc-container .prod-image-container {
+    order: 2;
+  }
+  body .main-conatiner .product-desc-container .prod-details-contaier {
+    order: 1;
+  }
+}

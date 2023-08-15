@@ -314,4 +314,22 @@ body {
       }
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .main-conatiner {
+      .product-desc-container {
+        display: grid;
+        grid-template-columns: 0fr;
+        grid-template-rows: 1fr 1fr;
+
+        .prod-image-container {
+          order: 2;
+        }
+
+        .prod-details-contaier {
+          order: 1;
+        }
+      }
+    }
+  }
 }
