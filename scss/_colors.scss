@@ -3,6 +3,8 @@ $primary-bg-color: #f1f3f6;
 $red: #e30613;
 $dark-red: #c2000b;
 $crimson: #fc4852;
+$error: #e30613;
+$info: cyan;
 
 $yellow: #ffc423;
 $dark-yellow: #e9b119;
@@ -15,3 +17,31 @@ $light-grey: #b7b7b7;
 $titanium-white: #e2e2e2;
 $white-smkoe: #f6f6f6;
 $white: #ffffff;
+
+$colors: (
+  "primary": $primary-color,
+  "error": $error,
+  "info": $info,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "grey": #808080,
+  "black": black,
+  "white": white,
+  "light-green": #9ebb05,
+);
+
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+  .border-#{$key} {
+    border: 1px solid $val;
+  }
+}

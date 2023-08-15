@@ -1,4 +1,160 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rubik:wght@300;400;500;600;700&family=Satisfy&display=swap");
+.text-primary {
+  color: #333;
+}
+
+.bg-primary {
+  background-color: #333;
+}
+
+.border-primary {
+  border: 1px solid #333;
+}
+
+.text-error {
+  color: #e30613;
+}
+
+.bg-error {
+  background-color: #e30613;
+}
+
+.border-error {
+  border: 1px solid #e30613;
+}
+
+.text-info {
+  color: cyan;
+}
+
+.bg-info {
+  background-color: cyan;
+}
+
+.border-info {
+  border: 1px solid cyan;
+}
+
+.text-blue {
+  color: #1919e6;
+}
+
+.bg-blue {
+  background-color: #1919e6;
+}
+
+.border-blue {
+  border: 1px solid #1919e6;
+}
+
+.text-red {
+  color: #e61919;
+}
+
+.bg-red {
+  background-color: #e61919;
+}
+
+.border-red {
+  border: 1px solid #e61919;
+}
+
+.text-yellow {
+  color: #e6e619;
+}
+
+.bg-yellow {
+  background-color: #e6e619;
+}
+
+.border-yellow {
+  border: 1px solid #e6e619;
+}
+
+.text-green {
+  color: #19e635;
+}
+
+.bg-green {
+  background-color: #19e635;
+}
+
+.border-green {
+  border: 1px solid #19e635;
+}
+
+.text-orange {
+  color: #ffa600;
+}
+
+.bg-orange {
+  background-color: #ffa600;
+}
+
+.border-orange {
+  border: 1px solid #ffa600;
+}
+
+.text-purple {
+  color: #9900ff;
+}
+
+.bg-purple {
+  background-color: #9900ff;
+}
+
+.border-purple {
+  border: 1px solid #9900ff;
+}
+
+.text-grey {
+  color: #808080;
+}
+
+.bg-grey {
+  background-color: #808080;
+}
+
+.border-grey {
+  border: 1px solid #808080;
+}
+
+.text-black {
+  color: black;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.border-black {
+  border: 1px solid black;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border-white {
+  border: 1px solid white;
+}
+
+.text-light-green {
+  color: #9ebb05;
+}
+
+.bg-light-green {
+  background-color: #9ebb05;
+}
+
+.border-light-green {
+  border: 1px solid #9ebb05;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   color: #333;
