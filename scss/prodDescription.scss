@@ -316,6 +316,11 @@ body {
   }
 
   @media only screen and (max-width: 460px) {
+    // .header-section {
+    //   .search {
+    //     display: none;
+    //   }
+    // }
     .main-conatiner {
       .product-desc-container {
         display: grid;
@@ -331,5 +336,37 @@ body {
         }
       }
     }
+
+    // body .main-conatiner .header-section .sub-header .menubar {
+    //   display: none;
   }
 }
+//   @media only screen and (max-width: 768px) {
+//     .header-section {
+//       .search {
+//         display: none;
+//       }
+//     }
+//     .sub-header {
+//       .menubar {
+//         display: none;
+//       }
+//     }
+//     body .main-conatiner .header-section .sub-header .menubar {
+//       display: none;
+//     }
+//   }
+//   @media only screen and (max-width: 920px) {
+//     .header-section {
+//       .search {
+//         display: flex;
+//         flex: 5;
+//         height: 40px;
+//       }
+//     }
+//     .sub-header {
+//       .menubar {
+//         display: flex;
+//       }
+//     }
+//   }
