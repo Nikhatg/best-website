@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="./css/login.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <link rel="stylesheet" type="text/css" href="./css/header.css" />
   </head>
   <body>
-      <object data="./header.html" class="header-file"></object>
-      <!-- <div class="header">
+    <div class="home">
+      <div class="header">
         <div class="best-logo">
           <img class="bay-logo" src="./assets/Bay-logo.svg" alt="Bay Logo" />
         </div>
@@ -34,7 +33,7 @@
             >
           </div>
         </div>
-      </div> 
+      </div>
       <div class="sub-header">
         <div class="all-cat">
           <i class="fa fa-bars icon" aria-hidden="true"></i>All Catogries
@@ -66,64 +65,15 @@
             <div class="cart-items">0 items</div>
           </div>
         </div>
-      </div>-->
-      <div class="login-container border-round">
-        <div class="login-header">Login</div>
-        <div class="returning-cust">Returning Customer</div>
-        <div class="form">
-          <div class="login-error">
-            You have entered an invalid username or password
-          </div>
-          <input
-            type="text"
-            id="user-name"
-            class="input-field"
-            placeholder="User name"
-          />
-          <input
-            type="password"
-            id="password"
-            class="input-field"
-            placeholder="Password"
-          />
-
-          <button type="submit" class="btn login-btn" onclick="login()">
-            Sign in
-          </button>
+      </div>
+      <div class="navigation">
+        <div class="home-link">
+          <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a><i class="fa fa-angle-right" aria-hidden="true"></i>
         </div>
+        <a href="#"><div class="large-app">Home Appliances<i class="fa fa-angle-right" aria-hidden="true"></i></div></a>
+        <a href="#"><div class="large-app">Large Appliances<i class="fa fa-angle-right" aria-hidden="true"></i></div></a>
+        <a href="#"></a> <div class="gas-cooker">Gas Cooker</div></a>
       </div>
     </div>
-    <script>
-      async function login() {
-        const form = {
-          email: document.querySelector("#user-name"),
-          password: document.querySelector("#password"),
-        };
-
-        await fetch("https://dummyjson.com/auth/login", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            username: form.email.value, //"kminchelle",
-            password: form.password.value, //"0lelplR",
-            // expiresInMins: 60, // optional
-          }),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.message) {
-              document.querySelector(".login-error").style.visibility =
-                "visible";
-            } else {
-              form.email.value = "";
-              form.password.value = "";
-              location.href = "./homePage.html";
-            }
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }
-    </script>
   </body>
 </html>

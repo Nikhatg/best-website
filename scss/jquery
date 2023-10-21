@@ -1,0 +1,26 @@
+// Search 
+var jQ = $.noConflict();
+        jQ(document).ready(function(){
+            jQ('#input').on('keyup', function(){
+                var val = jQ(this).val().toLowerCase();
+                jQ('table tr').filter(function(){
+                    jQ(this).toggle(jQ(this).text().toLowerCase().indexOf(val) > -1);
+                });
+            })
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // events
+            // $('#input').blur(function(e){
+            //     e.preventDefault();
+            //     alert('Hello'
