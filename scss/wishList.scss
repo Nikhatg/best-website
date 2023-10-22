@@ -176,7 +176,8 @@ body {
       gap: 20px;
 
       .product-card {
-        height: 435px;
+        // height: 435px;
+        border-bottom: 1px solid #e2e2e2;
         .card-header {
           display: flex;
           height: 20px;
@@ -188,8 +189,18 @@ body {
             color: white;
             background-color: #e30613;
             padding-inline: 10px;
+            border-radius: 3px;
           }
           .heart-icon {
+            cursor: pointer;
+          }
+        }
+        .arrows {
+          display: flex;
+          justify-content: end;
+          margin-block: 8px;
+
+          .fa {
             cursor: pointer;
           }
         }
@@ -213,6 +224,37 @@ body {
           .orig-price {
             color: #b7b7b7;
             text-decoration: line-through;
+          }
+        }
+        .best-seller {
+          span {
+            font-size: 9px;
+            color: white;
+            background-color: #e30613;
+            padding: 2px 7px 2px 2px;
+            border-radius: 3px;
+          }
+        }
+        .prod-stars {
+          font-size: 10px;
+          color: #b7b7b7;
+          margin-top: 13px;
+          display: flex;
+          justify-content: space-between;
+
+          .fa-star {
+            color: #ffc423;
+          }
+        }
+        .express-del {
+          margin: 10px 0 15px 0;
+          display: flex;
+          justify-content: space-between;
+          color: #b7b7b7;
+          font-size: 12px;
+
+          .fa {
+            margin-right: 3px;
           }
         }
       }
@@ -311,9 +353,16 @@ body {
         gap: 20px;
 
         .product-card {
+          border: none;
+          .arrows {
+            display: none;
+          }
           img {
             max-width: 100%;
             height: 50%;
+          }
+          .express-del {
+            display: none;
           }
         }
       }

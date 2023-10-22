@@ -91,12 +91,19 @@
         allProducts.forEach((product) => {
           // console.log(product);
           const htmlData = `<div class="product-card">
-            <div class="card-header"><div class="discount">15% off</div><div class="heart-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div></div>
+            <div class="card-header"><div class="discount">15% off</div>
+            <div class="heart-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div></div>
+            <div class="arrows"><i class="fa fa-exchange" aria-hidden="true"></i></div>
               <img src='${product.thumbnail}' class="prod-img"></img>
               <div class="prod-title">${product.title}</div>
               <div class="prod-price">KD 309.000 <span class="orig-price">KD349.000<span></div>
-              <div class="prod-buttons">
-              <div>
+                <div class="best-seller"><span>Best Seller<span></div>
+              <div class="prod-stars"><span>Installments <b>KD 13.000</b> monthly</span>
+                <span><i class="fa fa-star" aria-hidden="true"></i>4.2(25)</span>
+              </div>
+              <div class="express-del"><span><i class="fa fa-truck" aria-hidden="true"></i>Express 3hrs</span>
+                <span><i class="fa fa-home" aria-hidden="true"></i>
+                Click & Collect </span></div>
               </div>`;
           document.querySelector(".wish-list").innerHTML += htmlData;
         });

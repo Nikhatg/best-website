@@ -304,7 +304,7 @@ body .container .wish-list {
   gap: 20px;
 }
 body .container .wish-list .product-card {
-  height: 435px;
+  border-bottom: 1px solid #e2e2e2;
 }
 body .container .wish-list .product-card .card-header {
   display: flex;
@@ -317,8 +317,17 @@ body .container .wish-list .product-card .card-header .discount {
   color: white;
   background-color: #e30613;
   padding-inline: 10px;
+  border-radius: 3px;
 }
 body .container .wish-list .product-card .card-header .heart-icon {
+  cursor: pointer;
+}
+body .container .wish-list .product-card .arrows {
+  display: flex;
+  justify-content: end;
+  margin-block: 8px;
+}
+body .container .wish-list .product-card .arrows .fa {
   cursor: pointer;
 }
 body .container .wish-list .product-card img {
@@ -338,6 +347,33 @@ body .container .wish-list .product-card .prod-price {
 body .container .wish-list .product-card .prod-price .orig-price {
   color: #b7b7b7;
   text-decoration: line-through;
+}
+body .container .wish-list .product-card .best-seller span {
+  font-size: 9px;
+  color: white;
+  background-color: #e30613;
+  padding: 2px 7px 2px 2px;
+  border-radius: 3px;
+}
+body .container .wish-list .product-card .prod-stars {
+  font-size: 10px;
+  color: #b7b7b7;
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+body .container .wish-list .product-card .prod-stars .fa-star {
+  color: #ffc423;
+}
+body .container .wish-list .product-card .express-del {
+  margin: 10px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #b7b7b7;
+  font-size: 12px;
+}
+body .container .wish-list .product-card .express-del .fa {
+  margin-right: 3px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -422,8 +458,17 @@ body .container .wish-list .product-card .prod-price .orig-price {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
   }
+  body .container .wish-list .product-card {
+    border: none;
+  }
+  body .container .wish-list .product-card .arrows {
+    display: none;
+  }
   body .container .wish-list .product-card img {
     max-width: 100%;
     height: 50%;
+  }
+  body .container .wish-list .product-card .express-del {
+    display: none;
   }
 }
