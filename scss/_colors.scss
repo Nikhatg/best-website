@@ -34,6 +34,7 @@ $colors: (
   "light-green": #9ebb05,
   "primary-btn": #ffc423,
   "white-smkoe": #f6f6f6,
+  "light-grey": #757575,
 );
 
 @each $key, $val in $colors {
