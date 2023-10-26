@@ -179,6 +179,27 @@ body {
       background-color: #ffff;
       border-bottom: 1px solid #e2e2e2;
 
+      /* HIDE RADIO */
+      [type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      /* IMAGE or SPAN */
+      [type="radio"] + img,
+      [type="radio"] + span {
+        cursor: pointer;
+        border: 1px solid #e2e2e2;
+      }
+
+      /* CHECKED STYLES */
+      [type="radio"]:checked + img,
+      [type="radio"]:checked + span {
+        outline: 2px solid $error;
+      }
+
       .gift-card {
         .sold-by {
           padding-block: 12px;
@@ -221,12 +242,12 @@ body {
             padding-top: 10px;
             padding-bottom: 20px;
             //padding-left: 30px;
-            //padding-right: 40px;
 
-            .amount-option {
+            span {
               padding: 15px;
               border: 1px solid #e2e2e2;
               border-radius: 3px;
+              margin-right: 15px;
             }
           }
           .form-label {

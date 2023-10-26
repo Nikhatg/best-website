@@ -353,6 +353,24 @@ body .container {
 body .container .gift-container {
   background-color: white;
   border-bottom: 1px solid #e2e2e2;
+  /* HIDE RADIO */
+  /* IMAGE or SPAN */
+  /* CHECKED STYLES */
+}
+body .container .gift-container [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+body .container .gift-container [type=radio] + img,
+body .container .gift-container [type=radio] + span {
+  cursor: pointer;
+  border: 1px solid #e2e2e2;
+}
+body .container .gift-container [type=radio]:checked + img,
+body .container .gift-container [type=radio]:checked + span {
+  outline: 2px solid #e30613;
 }
 body .container .gift-container .gift-card .sold-by {
   padding-block: 12px;
@@ -392,10 +410,11 @@ body .container .gift-container .gift-card .gift-card-details td {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-body .container .gift-container .gift-card .gift-card-details td .amount-option {
+body .container .gift-container .gift-card .gift-card-details td span {
   padding: 15px;
   border: 1px solid #e2e2e2;
   border-radius: 3px;
+  margin-right: 15px;
 }
 body .container .gift-container .gift-card .gift-card-details .form-label {
   padding-right: 30px;
