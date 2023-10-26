@@ -3,3 +3,16 @@
 .border-round {
   border-radius: 10px;
 }
+//title
+
+.main-title {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+
+  span {
+    padding: 10px 25px 10px 0;
+    border-bottom: 3px solid #e30613;
+  }
+}

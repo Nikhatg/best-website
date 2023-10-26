@@ -191,8 +191,31 @@
   border: 1px solid #757575;
 }
 
+.text-secondary-btn {
+  color: #ececec;
+}
+
+.bg-secondary-btn {
+  background-color: #ececec;
+}
+
+.border-secondary-btn {
+  border: 1px solid #ececec;
+}
+
 .border-round {
   border-radius: 10px;
+}
+
+.main-title {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+}
+.main-title span {
+  padding: 10px 25px 10px 0;
+  border-bottom: 3px solid #e30613;
 }
 
 body {

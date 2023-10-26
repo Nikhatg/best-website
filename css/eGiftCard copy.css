@@ -191,18 +191,6 @@
   border: 1px solid #757575;
 }
 
-.text-secondary-btn {
-  color: #ececec;
-}
-
-.bg-secondary-btn {
-  background-color: #ececec;
-}
-
-.border-secondary-btn {
-  border: 1px solid #ececec;
-}
-
 body {
   background-color: #f5f5f5;
   font-family: "Rubik", sans-serif;
@@ -226,6 +214,20 @@ body .header-file {
 }
 body .txt-bold {
   font-weight: 500;
+}
+body .primary-btn {
+  width: 198px;
+  height: 46px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #ff9f00;
+}
+body .primary-btn .fa {
+  padding-right: 11px;
+}
+body .buy-btn {
+  background-color: #fb641b;
 }
 body .home {
   display: grid;
@@ -331,87 +333,72 @@ body .home .navigation .gas-cooker {
   color: #000000;
 }
 body .container {
-  margin: 24px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1215686275);
   border: 1px solid #e2e2e2;
   border-radius: 10px;
+  margin: 24px;
+}
+body .container .gift-container {
   background-color: white;
-}
-body .container .prod-title {
   border-bottom: 1px solid #e2e2e2;
-  padding-bottom: 10px;
-  font-weight: 500;
-  font-size: 30px;
 }
-body .container .prod-title span {
-  padding: 10px 25px 10px 0;
-  border-bottom: 3px solid #e30613;
-}
-body .container .compare-table {
-  width: 100%;
-  padding: 15px 0 22px;
-}
-body .container .compare-table .table-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 13px 0 13px 28px;
-}
-body .container .compare-table .table-row td {
-  position: relative;
+body .container .gift-container .gift-card .sold-by {
+  padding-block: 12px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid #e2e2e2;
 }
-body .container .compare-table .table-row td .close-btn {
-  width: 23.25px;
-  height: 23.25px;
-  position: absolute;
-  right: 0;
-  cursor: pointer;
-}
-body .container .compare-table .table-row td .prod-img {
-  width: 220px;
-  height: 170.44px;
-}
-body .container .compare-table .table-row td .prod-title {
-  font-size: 18px;
-}
-body .container .compare-table .table-row td .rating {
+body .container .gift-container .gift-card .sold-by .rating {
   display: flex;
   flex-direction: row;
   gap: 1px;
-  margin-top: 10px;
   font-size: 14px;
   color: #b9b9b9;
-  margin-bottom: 23px;
 }
-body .container .compare-table .table-row td .rating img {
+body .container .gift-container .gift-card .sold-by .rating img {
   width: 20px;
   height: 19px;
 }
-body .container .compare-table .table-row .stock {
-  font-size: 12px;
-}
-body .container .compare-table .table-row .stock .in-stock {
-  margin-right: 7.8px;
-  padding: 3px 19px 2px;
-  border-radius: 15px;
-}
-body .container .compare-table .prod-price td {
-  font-size: 20px;
+body .container .gift-container .gift-card .select-label {
+  font-size: 18px;
   font-weight: 500;
+  margin: 14.5px 0 7.5px 0;
 }
-body .container .compare-table .add-cart td button {
-  width: 245px;
-  padding: 19px 49px;
-  font-size: 20px;
+body .container .gift-container .gift-card .gift-card-options {
+  padding: 14.5px 0 30px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+body .container .gift-container .gift-card .gift-card-options img {
+  height: 95px;
+  width: 181px;
+}
+body .container .gift-container .gift-card .gift-card-details {
+  padding: 30px 0;
+}
+body .container .gift-container .gift-card .gift-card-details td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+body .container .gift-container .gift-card .gift-card-details input,
+body .container .gift-container .gift-card .gift-card-details textarea {
+  width: 100%;
+  border: 1px solid #b8b8b8;
+  padding: 15px 0 13px 19px;
   border-radius: 5px;
-  border: transparent;
 }
-body .container .compare-table .add-cart td button .fa {
-  margin-right: 13px;
+body .container .more-details {
+  padding: 15px;
 }
-body .footer {
+body .container .more-details ul {
+  list-style-type: "- ";
+}
+body .container .more-details ul li {
+  margin: 5px 0;
+}
+
+.footer {
   background-color: #404040;
   color: #ffffff;
   display: grid;
@@ -420,10 +407,10 @@ body .footer {
   font-size: 14px;
   font-weight: 300;
 }
-body .footer a {
+.footer a {
   text-decoration: none;
 }
-body .footer .footer-left {
+.footer .footer-left {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -431,26 +418,26 @@ body .footer .footer-left {
   align-items: center;
   background-color: #313131;
 }
-body .footer .footer-left .bay-logo {
+.footer .footer-left .bay-logo {
   max-width: 129px;
   max-height: 76px;
 }
-body .footer .footer-left .footer-left-section {
+.footer .footer-left .footer-left-section {
   width: 390px;
 }
-body .footer .footer-left .footer-left-section .footer-txt {
+.footer .footer-left .footer-left-section .footer-txt {
   margin: 25px 0;
 }
-body .footer .footer-left .footer-left-section .subscribe {
+.footer .footer-left .footer-left-section .subscribe {
   height: 50px;
   display: flex;
   margin-bottom: 25px;
 }
-body .footer .footer-left .footer-left-section .subscribe .sub-input {
+.footer .footer-left .footer-left-section .subscribe .sub-input {
   flex: 3;
   padding: 15px;
 }
-body .footer .footer-left .footer-left-section .subscribe .sub-button {
+.footer .footer-left .footer-left-section .subscribe .sub-button {
   flex: 1;
   background-color: #ffc423;
   text-align: center;
@@ -460,39 +447,39 @@ body .footer .footer-left .footer-left-section .subscribe .sub-button {
   color: #404040;
   font-size: 14px;
 }
-body .footer .footer-left .footer-left-section .download-app {
+.footer .footer-left .footer-left-section .download-app {
   display: flex;
   justify-content: space-between;
   height: 41px;
 }
-body .footer .footer-left .footer-left-section .download-app img {
+.footer .footer-left .footer-left-section .download-app img {
   max-width: 129px;
   max-height: 41px;
 }
-body .footer .footer-right {
+.footer .footer-right {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
   padding: 42px 15px;
 }
-body .footer .footer-right .footer-section {
+.footer .footer-right .footer-section {
   display: flex;
   flex-direction: column;
 }
-body .footer .footer-right .footer-section .footer-details {
+.footer .footer-right .footer-section .footer-details {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 21px 0 52px 0;
 }
-body .footer .footer-right .footer-section .contact-details .fa {
+.footer .footer-right .footer-section .contact-details .fa {
   color: #ffc423;
 }
-body .footer .footer-right .follow-us-section .social-icons {
+.footer .footer-right .follow-us-section .social-icons {
   display: flex;
   gap: 15px;
   margin-top: 15px;
 }
-body .footer .footer-right .follow-us-section .social-icons .fa {
+.footer .footer-right .follow-us-section .social-icons .fa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,20 +489,20 @@ body .footer .footer-right .follow-us-section .social-icons .fa {
   background-color: #ffc423;
   color: #000000;
 }
-body .footer .footer-right .payment {
+.footer .footer-right .payment {
   margin-top: 87px;
 }
-body .footer .footer-right .payment button {
+.footer .footer-right .payment button {
   background-color: #ffc423;
   border-radius: 5px;
   border: none;
   padding: 13px 6px;
   width: 148px;
 }
-body .footer .footer-right .payment button a {
+.footer .footer-right .payment button a {
   color: black;
 }
-body .footer .footer-right .payment .installment {
+.footer .footer-right .payment .installment {
   margin-bottom: 10px;
 }
 
@@ -592,7 +579,23 @@ body .footer .footer-right .payment .installment {
   }
   body .container {
     margin-inline: 100px;
+    margin-bottom: 65px;
     background-color: white;
-    padding: 30px;
+    padding: 30px 30px 258px 30px;
+  }
+  body .container .gift-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 116px;
+  }
+  body .container .gift-container .gift-card .gift-title {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  body .container .gift-container .gift-card .gift-title span {
+    padding: 10px 25px 10px 0;
+    border-bottom: 3px solid #e30613;
   }
 }
