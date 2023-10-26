@@ -210,6 +210,7 @@ body {
           img {
             height: 95px;
             width: 181px;
+            margin: 5px;
           }
         }
         .gift-card-details {
@@ -219,8 +220,17 @@ body {
           td {
             padding-top: 10px;
             padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 40px;
+            //padding-left: 30px;
+            //padding-right: 40px;
+
+            .amount-option {
+              padding: 15px;
+              border: 1px solid #e2e2e2;
+              border-radius: 3px;
+            }
+          }
+          .form-label {
+            padding-right: 30px;
           }
           input,
           textarea {

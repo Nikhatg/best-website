@@ -383,6 +383,7 @@ body .container .gift-container .gift-card .gift-card-options {
 body .container .gift-container .gift-card .gift-card-options img {
   height: 95px;
   width: 181px;
+  margin: 5px;
 }
 body .container .gift-container .gift-card .gift-card-details {
   padding: 30px 0;
@@ -390,8 +391,14 @@ body .container .gift-container .gift-card .gift-card-details {
 body .container .gift-container .gift-card .gift-card-details td {
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
+}
+body .container .gift-container .gift-card .gift-card-details td .amount-option {
+  padding: 15px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+}
+body .container .gift-container .gift-card .gift-card-details .form-label {
+  padding-right: 30px;
 }
 body .container .gift-container .gift-card .gift-card-details input,
 body .container .gift-container .gift-card .gift-card-details textarea {
