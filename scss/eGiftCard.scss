@@ -96,7 +96,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 38px;
+        padding: 14px;
+        // width: 38px;
 
         .all-cat-txt {
           display: none;
@@ -441,13 +442,22 @@ body {
       .sub-header {
         background-color: #000000;
         padding-inline: 100px;
+        overflow: hidden;
         .menubar {
           display: flex;
           list-style-type: none;
           flex: 8;
           gap: 5px;
+          width: 80%;
 
-          li {
+          .owl-stage {
+            display: flex;
+            // .owl-item {
+            //   width: 100px;
+            // }
+          }
+
+          .item {
             a {
               text-decoration: none;
               color: #ffff;

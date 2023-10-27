@@ -9,6 +9,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
   </head>
   <body>
     <div class="home">
@@ -41,23 +51,23 @@
           <p class="all-cat-txt">All Catogries</p>
         </div>
 
-        <ul class="menubar">
-          <li><a href="#">Weekly E-Flyer</a></li>
-          <li><a href="#">Air Conditioners</a></li>
-          <li><a href="#">Mobile Phones</a></li>
-          <li><a href="#">Refrigerators</a></li>
-          <li><a href="#"> Gas Cookers</a></li>
-          <li><a href="#">Laptops</a></li>
-          <li><a href="#">Personal Care</a></li>
-          <li><a href="#">TV & Audio </a></li>
-          <li><a href="#">Swimming</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">Smart Watches</a></li>
-          <li><a href="#">Gaming </a></li>
-          <li><a href="#">Scooters</a></li>
-          <li><a href="#">Smart Home</a></li>
-          <li><a href="#">Trimmers</a></li>
-        </ul>
+        <div class="menubar owl-carousel owl-theme">
+          <li class="item"><a href="#">Weekly E-Flyer</a></li>
+          <li class="item"><a href="#">Air Conditioners</a></li>
+          <li class="item"><a href="#">Mobile Phones</a></li>
+          <li class="item"><a href="#">Refrigerators</a></li>
+          <li class="item"><a href="#"> Gas Cookers</a></li>
+          <li class="item"><a href="#">Laptops</a></li>
+          <li class="item"><a href="#">Personal Care</a></li>
+          <li class="item"><a href="#">TV & Audio </a></li>
+          <li class="item"><a href="#">Swimming</a></li>
+          <li class="item"><a href="#">Music</a></li>
+          <li class="item"><a href="#">Smart Watches</a></li>
+          <li class="item"><a href="#">Gaming </a></li>
+          <li class="item"><a href="#">Scooters</a></li>
+          <li class="item"><a href="#">Smart Home</a></li>
+          <li class="item"><a href="#">Trimmers</a></li>
+        </div>
         <div class="my-cart">
           <a href="#"><img src="./assets/ic_shopping_cart_24px.svg"/></a>
           <div class="cart-txt">
@@ -241,5 +251,19 @@
       </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./resources/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      // var a = $(".owl-carousel");
+      // console.log(a[0]);
+
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 5,
+          dots: false,
+        });
+      });
+    </script>
   </body>
 </html>

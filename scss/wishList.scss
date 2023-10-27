@@ -63,6 +63,7 @@ body {
       text-align: center;
       background-color: #ffff;
       justify-content: space-between;
+      overflow: hidden;
 
       a {
         text-decoration: none;
@@ -95,11 +96,11 @@ body {
         gap: 5px;
         height: 100%;
         width: 111px;
-        margin-inline: 2rem;
+        margin-left: 2rem;
         background-color: $yellow;
         justify-content: center;
         align-items: center;
-        width: 65px;
+        // width: 65px;
 
         .cart-txt {
           font-size: 12px;
@@ -121,12 +122,6 @@ body {
         .cart-count {
           font-size: $txt-xs-sm;
         }
-        // .cart-items {
-        //   display: none;
-        // }
-        // .my-cart:hover + .cart-items {
-        //   display: block;
-        // }
       }
     }
 
@@ -308,8 +303,16 @@ body {
           list-style-type: none;
           flex: 8;
           gap: 5px;
+          width: 80%;
 
-          li {
+          .owl-stage {
+            display: flex;
+            // .owl-item {
+            //   width: 100px;
+            // }
+          }
+
+          .item {
             a {
               text-decoration: none;
               color: #ffff;

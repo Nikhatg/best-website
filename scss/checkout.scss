@@ -82,6 +82,7 @@ body {
       text-align: center;
       background-color: #ffff;
       justify-content: space-between;
+      overflow: hidden;
 
       a {
         text-decoration: none;
@@ -140,12 +141,6 @@ body {
         .cart-count {
           font-size: $txt-xs-sm;
         }
-        // .cart-items {
-        //   display: none;
-        // }
-        // .my-cart:hover + .cart-items {
-        //   display: block;
-        // }
       }
     }
 
@@ -426,8 +421,12 @@ body {
           list-style-type: none;
           flex: 8;
           gap: 5px;
+          width: 80%;
+          .owl-stage {
+            display: flex;
+          }
 
-          li {
+          .item {
             a {
               text-decoration: none;
               color: #ffff;

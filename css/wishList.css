@@ -261,6 +261,7 @@ body .home .sub-header {
   text-align: center;
   background-color: white;
   justify-content: space-between;
+  overflow: hidden;
 }
 body .home .sub-header a {
   text-decoration: none;
@@ -286,11 +287,10 @@ body .home .sub-header .my-cart {
   gap: 5px;
   height: 100%;
   width: 111px;
-  margin-inline: 2rem;
+  margin-left: 2rem;
   background-color: #ffc423;
   justify-content: center;
   align-items: center;
-  width: 65px;
 }
 body .home .sub-header .my-cart .cart-txt {
   font-size: 12px;
@@ -472,8 +472,12 @@ body .container .wish-list .product-card .express-del .fa {
     list-style-type: none;
     flex: 8;
     gap: 5px;
+    width: 80%;
   }
-  body .home .sub-header .menubar li a {
+  body .home .sub-header .menubar .owl-stage {
+    display: flex;
+  }
+  body .home .sub-header .menubar .item a {
     text-decoration: none;
     color: white;
   }

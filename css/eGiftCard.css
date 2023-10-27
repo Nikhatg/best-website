@@ -290,7 +290,7 @@ body .home .sub-header .all-cat {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38px;
+  padding: 14px;
 }
 body .home .sub-header .all-cat .all-cat-txt {
   display: none;
@@ -586,14 +586,19 @@ body .container .more-details ul li {
   body .home .sub-header {
     background-color: #000000;
     padding-inline: 100px;
+    overflow: hidden;
   }
   body .home .sub-header .menubar {
     display: flex;
     list-style-type: none;
     flex: 8;
     gap: 5px;
+    width: 80%;
   }
-  body .home .sub-header .menubar li a {
+  body .home .sub-header .menubar .owl-stage {
+    display: flex;
+  }
+  body .home .sub-header .menubar .item a {
     text-decoration: none;
     color: white;
   }
