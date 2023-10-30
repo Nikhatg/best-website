@@ -223,7 +223,7 @@ body .icon {
 }
 body .home {
   display: grid;
-  grid-template-rows: 80px 40px 40px;
+  grid-template-rows: 80px 40px;
 }
 body .home .fa-angle-right {
   margin-left: 10px;
@@ -240,30 +240,10 @@ body .home .header .best-logo {
   flex: 2;
 }
 body .home .header .search {
-  display: flex;
-  flex: 5;
-  height: 40px;
-}
-body .home .header .search .searchbar {
-  flex: 1;
-  padding: 8px;
-  border: none;
-}
-body .home .header .search .search-icon {
-  width: 45px;
-  background-color: #ffc423;
-  text-align: center;
-  margin: auto;
-  height: 40px;
-}
-body .home .header .search .search-icon i {
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-  top: 25%;
+  display: none;
 }
 body .home .header .right-header {
-  flex: 2;
+  flex: 1;
   display: flex;
   justify-content: space-around;
 }
@@ -276,13 +256,13 @@ body .home .sub-header {
   height: 40px;
   align-items: center;
   text-align: center;
+  background-color: white;
+  justify-content: space-between;
 }
 body .home .sub-header a {
   text-decoration: none;
-  color: #000000;
 }
 body .home .sub-header .all-cat {
-  flex: 1;
   text-align: center;
   margin-left: 15px;
   background-color: #ffc423;
@@ -290,40 +270,117 @@ body .home .sub-header .all-cat {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 14px;
+}
+body .home .sub-header .all-cat .all-cat-txt {
+  display: none;
 }
 body .home .sub-header .menubar {
-  display: flex;
-  list-style-type: none;
-  flex: 8;
-  gap: 5px;
+  display: none;
 }
 body .home .sub-header .my-cart {
   display: flex;
-  height: 52px;
+  gap: 5px;
+  height: 100%;
   width: 111px;
-  margin-inline: 2rem;
+  margin-left: 2rem;
   background-color: #ffc423;
   justify-content: center;
   align-items: center;
 }
-body .home .sub-header .my-cart .cart-items {
+body .home .sub-header .my-cart .cart-txt {
   font-size: 12px;
 }
-body .home .navigation {
-  color: #757575;
-  padding-left: 15px;
-  font-size: 12px;
-  text-align: center;
-  align-items: center;
+body .home .sub-header .my-cart .cart-txt .my-cart-txt {
+  display: none;
+}
+body .home .sub-header .my-cart .item-card {
   display: flex;
-  height: 40px;
-  background-color: #e8e8e8;
+  flex-direction: row;
   gap: 10px;
 }
-body .home .navigation a {
-  text-decoration: none;
-  color: #757575;
+body .home .sub-header .my-cart .item-card img {
+  height: 70px;
+  width: 70px;
 }
-body .home .navigation .gas-cooker {
-  color: #000000;
+body .home .sub-header .my-cart .cart-count {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  body .home {
+    display: grid;
+    grid-template-rows: 80px 40px;
+  }
+  body .home .header {
+    padding-inline: 100px;
+  }
+  body .home .header .search {
+    display: flex;
+    flex: 5;
+    height: 40px;
+  }
+  body .home .header .search .searchbar {
+    flex: 1;
+    padding: 8px;
+    border: none;
+  }
+  body .home .header .search .search-icon {
+    width: 45px;
+    background-color: #ffc423;
+    text-align: center;
+    margin: auto;
+    height: 40px;
+  }
+  body .home .header .search .search-icon i {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 25%;
+  }
+  body .home .header .right-header {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .home .sub-header {
+    background-color: #000000;
+    padding-inline: 100px;
+    overflow: hidden;
+  }
+  body .home .sub-header .menubar {
+    display: flex;
+    list-style-type: none;
+    flex: 8;
+    gap: 5px;
+    width: 80%;
+  }
+  body .home .sub-header .menubar .owl-stage {
+    display: flex;
+  }
+  body .home .sub-header .menubar .item a {
+    text-decoration: none;
+    color: white;
+  }
+  body .home .sub-header .all-cat {
+    flex: 1;
+    text-align: center;
+    margin-left: 0;
+    background-color: #ffc423;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .home .sub-header .all-cat .all-cat-txt {
+    display: block;
+    font-weight: 500;
+  }
+  body .home .sub-header .my-cart .cart-txt .my-cart-txt {
+    display: block;
+    font-weight: 500;
+  }
 }
